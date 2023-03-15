@@ -1,0 +1,165 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.back-col {
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.card-radius {
+    border-radius: 10px;
+    flex-basis: 330px;
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+#card-img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-img-top.desktop {
+    display: none;
+}
+
+.card-body {
+    margin: 2%;
+    height: 100%;
+}
+
+.product-category {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0 0 2% 0;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.card-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    margin-bottom: 4%;
+
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin: 5% -1% 5% 0;
+}
+
+.reduced-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: hsl(158, 36%, 37%);
+    padding: 0 8% 0 0;
+    display: inline-block;
+}
+
+.old-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+    font-size: 14px;
+    display: inline-block;
+    transform: translateY(-0.5em);
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 14px 0px 3px 0px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.icon {
+    display: inline-block;
+    font-size: 2em;
+    margin: 0% 5% 2% 0%;
+}
+
+@media screen and (min-width:320px) {
+    .card.card-radius {
+        border-radius: 10px;
+        flex-basis: 337px;
+        display: flex;
+        flex-shrink: 0.5;
+    }
+}
+
+@media screen and (min-width:362px) {
+    .card.card-radius {
+        border-radius: 10px;
+        flex-basis: 337px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .card.card-radius {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 561px;
+    }
+
+    .card-img-top.desktop {
+        display: flex;
+        border-radius: 10px 0 0 10px;
+
+    }
+
+    .card-img-top {
+        display: none;
+    }
+
+    .image-container {
+        display: block;
+        width: 50%;
+        max-width: 575px;
+        height: auto;
+        max-height: 600px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-body {
+        width: 42%;
+        margin: 2%;
+    }
+
+}
